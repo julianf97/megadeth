@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/31a5b25862.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="shorcut icon" href="../img/shorticon.png" type="image/x-icon">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title> Mustaine Gibson Guitar </title>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="container-navegador">
+      <div class="contenedor-elementos"> 
+        <div class="contenedor-logo">
+          <a href="../index.html"><img src="../img/logo.png"></a>
+        </div>
+          <div class="contenedor-lista-nav">
+          <div class="contenedor-palabra-menu">
+            <div id="btnmenu" class="palabra-menu">MENU</div>
+            <div id="contenedormenu" class="container-menu">
+            <div id="resto" class="resto"></div>
+              <div class="menu-mobile">
+                <div class="contenedor-cruz-menu">
+                  <i id="cruzmenu" class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="contenedor-logo">
+                  <img src="../img/logo.png">
+                </div>
+                <div class="cont-menu">
+                  <nav>
+                    <a href="./news.html">NEWS</a>
+                    <a href="./band.html">BAND</a>
+                    <a href="./tour.html">TOUR</a>
+                    <a href="./media.html">MEDIA</a>
+                    <a href="./disco.html">DISCOGRAPHY</a>
+                    <a href="./cyber-army.html">CYBER ARMY</a>
+                    <a href="./store.html">STORE</a>
+                    <a href="./contest.html">CONTESTS</a>
+                    <a href="./auctions.html">AUCTIONS</a>
+                  </nav>
+                </div>
+              </div>
+            </div> 
+          </div>
+          <ul>
+            <a href="./news.html"><li>NEWS</li></a>
+            <a href="./band.html"><li>BAND</li></a>
+            <a href="./tour.html"><li>TOUR</li></a>
+            <a href="./media.html"><li>MEDIA</li></a>
+            <a href="./disco.html"><li>DISCOGRAPHY</li></a>
+            <a href="./cyber-army.html"><li>CYBER ARMY</li></a>
+            <a href="./store.html"><li>STORE</li></a>
+            <a href="./contest.html"><li>CONTEST</li></a>
+            <a href="./auctions.html"><li>AUCTIONS</li></a>
+          </ul>
+        </div>
+        <div id="contenedorloginsign" class="contenedor-login-sign">
+          <button id="btnlogin"><h5 class="login">Log In</h5></button>
+          <h5 id="barraregistro" class="barra"> / </h5>
+          <button id="btnsign"><h5 class="sign">Sign Up</h5></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+  <!-- Log in - Sign up desktop -->
+<main>
+  <div id="contenedorlogin" class="contenedor-login">
+    <div id="contenedormodal" class="contenedor-formulario-login">
+    <form id="formulariologin">
+      <div id="modallogin" class="cuadrado-formulario">
+        <div class="contenedor-cruz">
+          <div class="contenedor-icono-cruz-login">
+            <button id="botonSalirFormulario"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+        </div>
+        <div class="contenedor-logo">
+          <div class="contenedor-img-logo-form">
+            <img src="../img/logo.png">
+          </div>
+        </div>
+        <div class="contenedor-titulo-login">
+          <h3>LOG IN TO YOUR ACCOUNT</h3>
+        </div>
+        <div class="contenedor-input-mail-login">
+          <div class="contenedor-labelcruz">
+            <label for="mailLogin">Email address or username</label><i id="cruzerrormaillogin" class="fa-regular fa-circle-xmark cruz-errorfirstname"></i>
+          </div>  
+          <input id="mailLogin" type="text" name="user_login" class="form-control" required="" placeholder="email@address.com">
+          <label id="erroruserlogin" class="error-firstname">Username/Email is incorrect</label>
+        </div>
+        <div class="contenedor-input-mail-login2">
+          <div class="contenedor-labelcruz">
+            <label for="passwordlogin">Password</label><i id="cruzerrorpasswordlogin" class="fa-regular fa-circle-xmark cruz-errorfirstname"></i>
+          </div>  
+          <input id="passwordlogin" type="password" name="user_login" class="form-control" required="" placeholder="password">
+          <label id="errorpaswordlogin" class="error-firstname">Password is incorrect</label>
+        </div>
+        <div class="contenedor-boton-login">
+          <div class="contenedor-cuadrado-check">
+            <button id="checkcuadrado" type="submit"><div class="cuadrado-check"><div id="rellenoCuadrado" class="relleno"></div></div></button>
+            <button id="recuerdamecuadrado"><h6>Remember  Me</h6></button>
+          </div>
+          <div class="contenedor-btn-login">
+            <button id="sendlogin"><div  class="btn-login"><h5>LOG IN</h5></div></button>
+          </div>
+        </div>
+        <div class="contenedor-forgot">
+          <div class="linea-arriba">
+            <h6><button id="notmember">Not a member? Register</button></h6>
+            <h6>Forgot Password?</h6>
+          </div>
+        </div>
+      </div>
+    </form> 
+    </div>
+  </div>
+  <div id="contenedorsign" class="contenedor-sign">
+    <div id="contenedormodalsign" class="contenedor-formulario-sign"> 
+      <div id="modalSign" class="cuadrado-formulario">
+        <div class="contenedor-cruz">
+          <div class="contenedor-icono-cruz-login">
+            <button id="salirSign"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+        </div>
+        <div class="contenedor-logo">
+          <div class="contenedor-img-logo-form">
+            <img src="../img/logo.png">
+          </div>
+        </div>
+        <div class="contenedor-titulo-login">
+          <h3>REGISTER</h3>
+        </div>
+        <form id="formulario">
+          <div class="contenedor-names">
+              <div class="contenedor-first-name">
+                <label for="firstname">First Name</label><i id="cruzerrorfirstname" class="fa-regular fa-circle-xmark cruz-errorfirstname"></i>
+                <input id="firstname"  type="text" name="user_firstname" class="form-control" required="">
+                <label id="errorfirstname" class="error-firstname">First name cannot have numbers or be empty</label>
+              </div>
+              <div class="contenedor-last-name">
+                <label for="lastname">Last Name</label><i id="cruzerrorlastname" class="fa-regular fa-circle-xmark cruz-errorlastname"></i>
+                <input id="lastname"  type="text" name="user_lastname" class="form-control" required="">
+                <label id="errorlastname" class="error-lastname">Last name cannot have numbers or be empty</label>
+              </div>
+          </div>
+          <div class="contenedor-mail">
+            <div id="contenedorinput" class="contenedor-input">
+              <label id="labelmailsign" for="mailsign">Email address</label><i id="cruzerrormail" class="fa-regular fa-circle-xmark cruz-error"></i>
+              <input id="mailsign" type="email" name="correo" class="form-control" required="" placeholder="email@address.com">
+              <label id="errorcorreo" class="error-correo">Email already exist</label>
+            </div>
+          </div>
+          <div class="contenedor-names">
+            <div id="contenedorusername" class="contenedor-first-name">
+              <label id="labelusername" for="username">Username</label><i id="cruzerroruser" class="fa-regular fa-circle-xmark cruz-error"></i>
+              <input id="username" type="text" name="username" class="form-control" required="">
+              <label id="erroruser" class="error-user">Username already exist</label>
+            </div>
+            <div class="contenedor-last-name">
+              <label for="password">Password</label><i id="cruzerrorpassword" class="fa-regular fa-circle-xmark cruz-error"></i>
+              <input id="password" type="password" name="contrasenia" class="form-control" required="">
+            </div>
+          </div>
+          <div class="contenedor-btn-joinfree">
+            <button id="btnfree" type="submit"><div class="btn-joinfree"><h5>JOIN FOR FREE</h5></div></button>
+          </div>
+        </form>
+        <div class="contenedor-forgot">
+          <div class="linea-arriba">
+            <h6><button id="alreadymember">Already member? Login</button></h6>
+            <h6>Forgot Password?</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="gradiente">
+    <article>
+        <!-- MOBILE -->
+        <div class="contenedor-articulo-news-mobile">
+            
+        </div>
+    </article>
+  </section>
+</main>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../js/login-menu.js"></script>
+</body>
